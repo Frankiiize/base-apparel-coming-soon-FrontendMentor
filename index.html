@@ -3,19 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
+  <main>
+    <section class="hero__container">   
+      <picture>
+        <source media="(max-width:900px)" srcset="images/hero-mobile.jpg">
+        <source media="(min-width:900px)" srcset="images/hero-desktop.jpg">
+        <img class="imagen" src="images/hero-mobile.jpg" alt="hero-image">
+      </picture>
+    </section>
+  </main>
   We're coming soon
 
   Hello fellow shoppers! We're currently building our new fashion store. 
