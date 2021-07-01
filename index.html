@@ -38,13 +38,18 @@
       </div>
       <div class="infoContainer__contact">
         <form class="infoContainer__contact__form" action="">
-          <input type="email" value="Email Address" >
-          <div class="infoContainer__contact__form-icon">
+          <input id="email" type="email" value="E" >
+        
+          <div id="sendButton" class="infoContainer__contact__form-icon">
             <i class="arrow-icon"></i>
+          </div>
+          <div class="infoContainer__contact__form-error">
+            <i id="iconError" class="error-icon"></i>
           </div>
         </form>
       </div>
     </section>
+    <div id="print" class="printContainer"></div>
      
   </main>
   
@@ -54,5 +59,6 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+  <script src="src/index.js"></script>
 </body>
 </html>
