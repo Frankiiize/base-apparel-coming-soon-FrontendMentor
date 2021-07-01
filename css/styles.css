@@ -2,14 +2,36 @@
 /* ------------------------$/COLORS----------------------- */
 /* ------------------------$FONTS------------------------- */
 /* ------------------------$/FONTS------------------------ */
+/* ----place holders --- */
+.infoContainer__contact__form-icon i {
+  width: 12px;
+  height: 20px;
+  display: inline-flex;
+  background-image: url(../../images/icon-arrow.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 12px 20px;
+}
+
+/* ----place holders --- */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+body {
+  width: 100%;
+  height: 100vh;
+}
+
 html {
   font-size: 62.5%;
+}
+
+main {
+  width: 100%;
+  background-color: #fff5f5;
 }
 
 .logoContainer {
@@ -18,6 +40,7 @@ html {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  background-color: white;
 }
 .logoContainer img {
   max-width: 25%;
@@ -28,21 +51,28 @@ html {
   width: 100%;
   height: auto;
 }
+.heroContainer img {
+  width: 100%;
+  height: auto;
+}
 
 .infoContainer {
   width: 100%;
   display: flex;
   flex-direction: column;
+  background-color: #fff5f5;
+  padding-bottom: 30px;
 }
 .infoContainer__title {
   width: 80%;
-  margin: 0 auto;
+  margin: 40px auto 30px auto;
   text-align: center;
 }
 .infoContainer__title h1 {
   display: flex;
   flex-direction: column;
-  font-size: 3rem;
+  font-size: 3.5rem;
+  font-weight: 700;
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
   letter-spacing: 10px;
@@ -54,6 +84,7 @@ html {
 .infoContainer__description {
   width: 80%;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 .infoContainer__description p {
   text-align: center;
@@ -70,22 +101,50 @@ html {
 }
 .infoContainer__contact__form {
   width: 100%;
+  height: 45px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
   position: relative;
+  border: 1px solid #ce9797;
+  border-radius: 30px;
 }
 .infoContainer__contact__form input:nth-child(1) {
-  width: 100%;
-  height: 50px;
-  border-radius: 30px;
-  border: 1px solid #ce9797;
+  width: 70%;
+  height: 20px;
+  margin-left: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #ce9797;
+  background-color: transparent;
+  border: transparent;
 }
-.infoContainer__contact__form input:nth-child(2) {
+.infoContainer__contact__form-icon {
+  width: 20%;
+  height: 44px;
   position: absolute;
-  right: 0px;
-  width: 60px;
-  height: 50px;
-  border-radius: 40%;
-  background: linear-gradient(#f8bfbf, #ee8c8c);
-  border: 1px solid #ce9797;
+  right: -1px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #f8bfbf, #ee8c8c);
+  border-radius: 30px;
+}
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: #fff5f5;
+}
+footer p {
+  font-family: "Josefin Sans", sans-serif;
+  color: #ce9797;
+  margin-right: 10px;
+}
+footer p a {
+  text-decoration: none;
+  color: #413a3a;
 }
 
 /*# sourceMappingURL=styles.css.map */
