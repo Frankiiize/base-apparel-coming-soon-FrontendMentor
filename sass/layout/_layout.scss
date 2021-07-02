@@ -83,15 +83,19 @@ main{
         &__form {
             width:100%;
             height: 45px;
-            display: inline-flex;
+            display: grid;
+            grid-template-columns:3fr 1fr 1fr;
+            grid-template-rows: 1fr;
             align-items: center;
-            justify-content:space-between;
-            position: relative;
+            justify-content:space-around;
+            //position: relative;
             //position:relative;
             border: 1px solid $color-primary;
             border-radius:  30px;
             input:nth-child(1){
-                width:70%;
+                grid-column: 1 / 3;
+                grid-row: 1 / 2;
+                //width:100%;
                 height: 20px;
                 margin-left: 20px;
                 font-family: $ff-primary;
@@ -100,14 +104,24 @@ main{
                 //border-radius: 30px;
                 border: transparent;
             }
-            &-icon{
-                width:20%;
+            input:focus{
+                outline:none;
+               
+            }
+                
+            &-button {
+                grid-column:  3 / 4;
+                grid-row: 1 / 2;
+                width:100%;
+                max-width: 100px;
                 height:44px; 
-                position:absolute;
+                position:relative;
                 right: -1px;
+                //right: -1px;
                 display: inline-flex;
                 justify-content: center;
                 align-items: center;
+                justify-self: flex-end;
                 background: linear-gradient(to right,$color-dgrad-From,$color-dgrad-to);
                 border-radius:30px;
                 i:nth-child(1) {
@@ -115,11 +129,15 @@ main{
                 }
 
             }
-            &-error{
+            &-errorIcon{
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
                 width: 24px;
                 height: 24px;
-                position:absolute;
-                right: 70px;
+                justify-self: flex-end;
+                margin-right: 10px;
+                //position:absolute;
+                //right: 70px;
                 i {
                     
                     display: none;
@@ -127,9 +145,10 @@ main{
                     width: 24px;
                     height: 24px;
                 }
-            }
+            } 
            
         }
+       
     }
 }
 .printContainer {

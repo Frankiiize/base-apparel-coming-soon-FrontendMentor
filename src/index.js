@@ -2,6 +2,7 @@ let button = document.querySelector('#sendButton');
 let email = document.querySelector('#email');
 let print = document.querySelector('#print');
 let iconError = document.querySelector('#iconError');
+let printContainer = document.querySelector('#print');
 
 button.onclick = () => {
 
@@ -12,7 +13,13 @@ button.onclick = () => {
         console.log('valido')
         print.append(span);
         span.classList = 'printContainer__span'
+        span.style.color = 'green';
         span.innerHTML = "success"
+        setTimeout(() => {
+            printContainer.removeChild(span);
+            //span.innerHTML = "";
+            iconError.style.display = 'none';
+        },1300); 
         
     } else {
         console.log('no valido')
@@ -21,9 +28,10 @@ button.onclick = () => {
         span.classList = 'printContainer__span'
         span.innerHTML = "Please provide a valid email"
         setTimeout(() => {
-            span.innerHTML = "";
+            printContainer.removeChild(span);
+            //span.innerHTML = "";
             iconError.style.display = 'none';
-        },2000); 
+        },1300); 
     }
     
 }
