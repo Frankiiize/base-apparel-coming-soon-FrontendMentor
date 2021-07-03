@@ -8,15 +8,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/desk.css" media="(min-width: 900px)">
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
 </head>
 <body>
 
-  <main>
+  <main class="main">
     <section class="logoContainer">
       <img src="images/logo.svg" alt="company logo" />
     </section>
+    <div class="background"></div>
     <section class="heroContainer">   
       <picture>
         <source media="(max-width:900px)" srcset="images/hero-mobile.jpg">
@@ -38,7 +40,7 @@
       </div>
       <div class="infoContainer__contact">
         <form class="infoContainer__contact__form" action="">
-          <input id="email" type="email" placeholder="E" >
+          <input id="email" type="email" placeholder="Email adress" >
           <div class="infoContainer__contact__form-errorIcon">
             <i id="iconError" class="error-icon"></i>
           </div>
@@ -48,17 +50,17 @@
          
         </form>
       </div>
+      <div id="print" class="printContainer"></div>
     </section>
-    <div id="print" class="printContainer"></div>
      
   </main>
   
-  <footer>
+ <!--  <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </p>
-  </footer>
+  </footer> -->
   <script src="src/index.js"></script>
 </body>
 </html>

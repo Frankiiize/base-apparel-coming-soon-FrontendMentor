@@ -16,6 +16,9 @@ main{
     width: 100%;
    
 }
+.background{ 
+    display: none;
+}
 
 .logoContainer{ 
     width: 100%;
@@ -135,7 +138,7 @@ main{
                 width: 24px;
                 height: 24px;
                 justify-self: flex-end;
-                margin-right: 10px;
+                margin-right: 25px;
                 //position:absolute;
                 //right: 70px;
                 i {
