@@ -12,11 +12,11 @@
 }
 
 .infoContainer__contact__form-button i:nth-child(1) {
-  background-image: url(../../images/icon-arrow.svg);
+  background-image: url(../images/icon-arrow.svg);
 }
 
 .infoContainer__contact__form-errorIcon i {
-  background-image: url(../../images/icon-error.svg);
+  background-image: url(../images/icon-error.svg);
 }
 
 /* ----place holders --- */
