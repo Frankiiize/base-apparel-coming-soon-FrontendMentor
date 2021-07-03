@@ -1,0 +1,79 @@
+body{
+    background-color: transparent;
+}
+.main{ 
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 1fr ;
+    margin: 0 auto;
+    justify-content: flex-start;
+    
+}
+
+.logoContainer{
+    max-width:480px;
+    margin: 0 auto;
+    grid-column:1 / 2;
+    grid-row: 1 / 2;
+    align-self: center;
+    background:transparent;
+}
+.heroContainer{
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    overflow:hidden;
+        img{ 
+            width:100%;
+            height:auto;
+            object-fit: cover;
+        }
+    
+}
+.infoContainer{
+    max-width:480px;
+    margin: 0 auto;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color: transparent;
+    &__title{
+        margin: 80px auto 20px auto;
+        h1{
+            text-align: left;
+            font-size: $fs-max;
+            line-height: 1.2;
+        }
+    }
+    &__description{
+        p {
+
+            text-align: left;
+        }
+
+    }
+    &__contact{
+        &__form {
+            &-button{
+                right: -2px;
+            }
+            &-button:hover {
+                transform: scale(1.2);
+                background: linear-gradient(to right,$color-lgrad-to,$color-dgrad-From);
+                box-shadow: 0px 9px 20px 0px $color-dgrad-to;
+                cursor: pointer;
+            }
+
+        }
+    }
+}
+.background{
+    display: block;
+    grid-column:1 / 2;
+    grid-row: 1 / 3;
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}

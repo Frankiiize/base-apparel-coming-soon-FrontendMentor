@@ -8,6 +8,7 @@ README-template.md
 style-guide.md
 package.json
 styles.css.map
+desk.css.map
 utilidad/icons.css.map
 # Avoid accidental XD or Figma upload if you convert the design file
 #######################################################
