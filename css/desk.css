@@ -20,12 +20,15 @@ body {
 }
 
 .logoContainer {
-  max-width: 500px;
+  max-width: 480px;
   margin: 0 auto;
   grid-column: 1/2;
   grid-row: 1/2;
   align-self: center;
   background: transparent;
+}
+.logoContainer img {
+  margin-left: 50px;
 }
 
 .heroContainer {

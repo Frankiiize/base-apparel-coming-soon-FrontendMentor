@@ -13,12 +13,15 @@ body{
     
 }
 .logoContainer{
-    max-width:500px;
+    max-width:480px;
     margin: 0 auto;
     grid-column:1 / 2;
     grid-row: 1 / 2;
     align-self: center;
     background:transparent;
+    img {
+        margin-left: 50px;
+    }
 }
 .heroContainer{
     grid-column: 2 / 3;
@@ -28,6 +31,7 @@ body{
             width:100%;
             height:100%;
             object-fit: cover;
+            
         }
 }
 .infoContainer{
