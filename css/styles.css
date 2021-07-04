@@ -77,19 +77,19 @@ main {
   width: 80%;
   margin: 40px auto 30px auto;
   text-align: center;
-}
-.infoContainer__title h1 {
-  display: flex;
-  flex-direction: column;
-  font-size: 3.5rem;
-  font-weight: 700;
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
   letter-spacing: 10px;
 }
-.infoContainer__title h1 span:nth-child(1) {
-  font-weight: 300;
+.infoContainer__title h1 {
+  font-size: 3.5rem;
   color: #ce9797;
+  font-weight: 300;
+}
+.infoContainer__title h2 {
+  color: #413a3a;
+  font-weight: 700;
+  font-size: 3.5rem;
 }
 .infoContainer__description {
   width: 80%;

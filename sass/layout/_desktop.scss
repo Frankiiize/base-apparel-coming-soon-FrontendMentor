@@ -38,10 +38,11 @@ body{
     background-color: transparent;
     &__title{
         margin: 80px auto 20px auto;
+        color: $color-neutral;
+        line-height: 1.4;
         h1{
             text-align: left;
             font-size: $fs-max;
-            line-height: 1.2;
         }
     }
     &__description{

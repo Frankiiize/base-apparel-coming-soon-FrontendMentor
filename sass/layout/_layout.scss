@@ -51,18 +51,18 @@ main{
         width:80%;
         margin: 40px auto 30px auto;
         text-align: center;
-        h1 {
-            display: flex;
-            flex-direction:column;
+        font-family: $ff-primary;
+        text-transform:uppercase;
+        letter-spacing:10px;
+        h1{
             font-size: $fs-huge;
+            color: $color-primary;
+            font-weight: 300;
+        }
+        h2 {
+            color: $color-neutral;
             font-weight: 700;
-            font-family: $ff-primary;
-            text-transform:uppercase;
-            letter-spacing:10px;
-            span:nth-child(1) {
-                font-weight:300;
-                color: $color-primary;
-            }
+            font-size: $fs-huge;
         }
     }
     &__description {
