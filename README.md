@@ -52,6 +52,12 @@ I got practice with field validation in inputs with JS, responsive design and fi
 
 ## Author
 
+<<<<<<< HEAD
 - Website - [frankiiize](https://github.com/Frankiiize)
 - Frontend Mentor - [@frankiiize](https://www.frontendmentor.io/profile/Frankiiize)
 - Twitter - [@frankiiize](https://www.twitter.com/frankiiize)
+=======
+- Website - [Frankiiize](https://github.com/Frankiiize)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Frankiiize)
+- Twitter - [@yourusername](https://www.twitter.com/frankiiize)
+>>>>>>> 00a9ea7d893087b502b6c1afa0cf1faa68fdec38
