@@ -7,10 +7,10 @@ let click = true;
 
 
 button.onclick = () => {
-    
+    console.log(email.value)
     let emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
     let span = document.createElement('span');
-    if(click === true) {
+    if(click === true && email.value != "") {
         click = false;
         if(emailRegex.test(email.value)){
             console.log('valido')
@@ -36,6 +36,16 @@ button.onclick = () => {
             },1300); 
         }
     }else {
+        console.log('campo vacio');
+        iconError.style.display = 'block';
+        print.append(span);
+        span.classList = 'printContainer__span';
+        span.innerHTML = "Enter an email";
+        setTimeout(() => {
+            printContainer.removeChild(span);
+            iconError.style.display = 'none';
+            click = true;
+        },1300); 
         return 
     } 
 }
