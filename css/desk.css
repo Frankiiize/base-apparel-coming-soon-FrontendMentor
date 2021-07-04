@@ -65,6 +65,7 @@
 }
 .infoContainer__contact__form-button {
   right: -2px;
+  width: 100%;
 }
 .infoContainer__contact__form-button:hover {
   transform: scale(1.2);
