@@ -49,12 +49,12 @@ html {
   display: none;
 }
 
-header.logoContainer {
+.logoContainer {
   width: 100%;
   padding-top: 20px;
   background-color: white;
 }
-header.logoContainer img {
+.logoContainer img {
   margin-left: 35px;
 }
 

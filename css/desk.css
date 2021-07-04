@@ -15,7 +15,7 @@
   justify-content: flex-start;
 }
 
-header.logoContainer {
+.logoContainer {
   max-width: 500px;
   margin: 0 auto;
   grid-column: 1/2;
@@ -23,7 +23,7 @@ header.logoContainer {
   align-self: center;
   background: transparent;
 }
-header.logoContainer img {
+.logoContainer img {
   width: 150px;
   height: 35px;
   margin-left: 50px;
