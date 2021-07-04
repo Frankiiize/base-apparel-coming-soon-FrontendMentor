@@ -28,7 +28,6 @@ main{
     align-items: center;
     background-color: white;
     img {
-        max-width:25%;
         margin-left: 35px;
     }
 }
@@ -102,6 +101,9 @@ main{
                 color: $color-primary;
                 background-color: transparent;
                 border: transparent;
+            }
+            input::placeholder{
+                color: $color-primary;
             }
             input:focus{
                 outline:none;
