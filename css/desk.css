@@ -16,7 +16,7 @@
 }
 
 .logoContainer {
-  max-width: 500px;
+  max-width: 600px;
   margin: 0 auto;
   grid-column: 1/2;
   grid-row: 1/2;
@@ -41,7 +41,7 @@
 }
 
 .infoContainer {
-  max-width: 500px;
+  max-width: 600px;
   margin: 0 auto;
   grid-column: 1/2;
   grid-row: 2/3;
